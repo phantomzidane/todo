@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-add></app-add>
+    </div>
+    <div class="col-md-6">
+      <app-alltodos></app-alltodos>
+    </div>
+  </div>
+  <button class="btn" (click)="calculate()">Calculate your Productivity Score</button>
+  <div class="text-center  mt-5"*ngIf="bool"> <p >Your productivity Score is {{answer}}</p></div>
+ 
+</div>
